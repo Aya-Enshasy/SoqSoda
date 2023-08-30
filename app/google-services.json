@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "243563387103",
+    "project_id": "spdollar-e65cb",
+    "storage_bucket": "spdollar-e65cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243563387103:android:7eb247a9032a372c00316a",
+        "android_client_info": {
+          "package_name": "com.lira_turkish.dollarstocks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243563387103-67scu27hqi0cdlthhj2328snolnv6qph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5-8sXVoDlN4ePZlt7_guCCgaGfTXutmk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243563387103-67scu27hqi0cdlthhj2328snolnv6qph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

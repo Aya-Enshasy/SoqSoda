@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:background="@color/white"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/mType"
+                android:gravity="center"
+                android:textColor="@color/background" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/t11"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="16dp"
+                android:layout_below="@id/mType">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@id/Color">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_above="@id/vi44"
+                        android:text="شراء"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E3EEEE"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dp"
+                        android:id="@+id/vi44"/>
+
+                    <EditText
+                        android:id="@+id/b"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/vi44"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:id="@+id/Color"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:id="@+id/Icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="16dp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/Color">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_above="@id/vi444"
+                        android:text="مبيع"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E3EEEE"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dp"
+                        android:id="@+id/vi444"/>
+
+                    <EditText
+                        android:id="@+id/s"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/vi444"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/t11">
+
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/progress"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/update"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="26dp"
+                    android:gravity="center"
+                    android:text="تحديث"
+                    android:textColor="#000"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

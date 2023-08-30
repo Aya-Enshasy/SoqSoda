@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".feature.currency.fragments.crops.history.CropsHistoryActivity">
+
+
+    <include android:id="@+id/included"
+        layout="@layout/include_data_top_bar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="false"
+        android:paddingVertical="20dp"
+        android:layout_weight="1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_history"/>
+
+
+    <com.lira_turkish.dollarstocks.TemplateView
+        android:id="@+id/my_template_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:gnt_template_type="@layout/gnt_small_template_view" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

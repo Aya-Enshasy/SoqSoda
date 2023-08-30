@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/converer"
+        android:background="@color/item_background"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        android:fontFamily="@font/droid_bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginLeft="34dp"
+        android:background="@drawable/back_tabs"
+        android:orientation="horizontal">
+
+        <com.lira_turkish.dollarstocks.view.CircularImageView
+            android:layout_width="35dp"
+            android:layout_height="32dp"
+            android:src="@drawable/us"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="8dp"/>
+
+        <TextView
+            android:id="@+id/fromConvert"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_tabs"
+            android:gravity="center_vertical"
+            android:minWidth="120dp"
+            android:layout_marginEnd="5dp"
+            android:text="دولار"
+            android:textColor="#fff"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_chevron_left_24"/>
+
+        <TextView
+            android:id="@+id/toConvert"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_tabs"
+            android:gravity="center_vertical|left"
+            android:textColor="#fff"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:minWidth="120dp" />
+
+        <com.lira_turkish.dollarstocks.view.CircularImageView
+            android:id="@+id/to_flag"
+            android:layout_width="35dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/mAd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="visible" />
+
+
+
+            <EditText
+                android:id="@+id/money"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/back_tabs"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:hint="ادخل قيمة"
+                android:textColorHint="#ccc"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/convertBtn"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/back_tabs"
+                android:text="تحويل"
+                android:textColor="#fff" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#303943"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/convert_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/back_tabs"
+                        android:gravity="center"
+                        android:text="الناتج"
+                        android:textColor="#fff" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center_horizontal"
+        android:indeterminateTint="@color/purple_500"
+        android:id="@+id/convert_prog"/>
+
+</LinearLayout>
